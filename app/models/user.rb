@@ -1,7 +1,7 @@
 class User < ApplicationRecord
- has_many :courses
- has_many :enrollments
- has_many :enrolled_courses, through: :enrollments, source: :course
+ has_many :courses, dependent: :destroy
+ has_many :enrollments, dependent: :destroy
+ has_many :enrolled_courses, through: :enrollments, source: :course, dependent: :destroy
 
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
