@@ -35,7 +35,8 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   <%= image_tag current_course.image, class: 'img-fluid' %>
-
+  <br />
+  <br />
   <div class="text-center">
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#newSectionModal">
@@ -47,7 +48,7 @@
     <% current_course.sections.rank(:row_order).each do |section| %>
       <li data-update-url="<%= instructor_section_path section %>" class="section-li">
         <div class="header float-left">
-          <span class="fa fa-list"></span>
+          <span class="fa fa-ellipsis-v"></span>
           <%= section.title %>
         </div>
         <!-- Button trigger modal -->
@@ -64,7 +65,7 @@
             <div class="row">
               <div class="col-1">
                 <br />
-                <span class="fa fa-list"></span>
+                <span class="fa fa fa-ellipsis-v fa-2x"></span>
               </div>
               <div class="col-11 text-center">
                 <p>
@@ -100,8 +101,8 @@
           <%= f.input :title %>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Add a section", class: 'btn btn-primary' %>
+          <button type="button" class="btn-modal btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit "Add a section", class: 'btn-modal btn-primary' %>
         </div>
       <% end %>
     </div>
@@ -125,8 +126,8 @@
             <%= f.input :video %>      
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <%= f.submit "Add the lesson", class: 'btn btn-primary' %> 
+          <button type="button" class="btn-modal btn-secondary" data-dismiss="modal">Close</button>
+          <%= f.submit "Add the lesson", class: 'btn-modal btn-primary' %> 
         </div>
       <% end %>
     </div>
