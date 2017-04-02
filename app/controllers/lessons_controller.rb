@@ -8,7 +8,7 @@ class LessonsController < ApplicationController
   private
 
   def require_authorized_for_current_course
-    if ! current_user.enrolled_in?(current_course) ####mentor throwing an exception?
+    if ! current_user.enrolled_in?(current_course)
       redirect_to course_path(current_course), alert: 'User not Enrolled'   
     end
   end
