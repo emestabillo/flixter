@@ -1,24 +1,15 @@
-# README
+# FLIXTER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Overview
 
-Things you may want to cover:
+A two-sided, video-streaming marketplace platform thatfeatures credit card payment capabilities, user role management, complex user interfaces, and advanced database relationships.
 
-* Ruby version
+It's live [here](https://flixter-em-estabillo.herokuapp.com/).
 
-* System dependencies
+## Contribute
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+1. Fork it!
+2. Create your feature branch: `git checkout -b my-new-feature`
+3. Commit your changes: `git commit -am 'Add some feature'`
+4. Push to the branch: `git push origin my-new-feature`
+5. Submit a pull request
